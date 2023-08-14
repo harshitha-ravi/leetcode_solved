@@ -14,6 +14,7 @@ class Solution:
                 k = k - 1
                 j = j - 1
 
+
         print(nums1)
 
 
