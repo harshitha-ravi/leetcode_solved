@@ -13,8 +13,6 @@ class Solution:
                 nums1[k] = nums2[j]
                 k = k - 1
                 j = j - 1
-
-
         print(nums1)
 
 
