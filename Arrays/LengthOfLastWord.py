@@ -10,7 +10,7 @@ class Solution:
         i = len(s) - 1
         count = 0
 
-        # This loop checks for any white spaces in the the end of the string
+        # This loop checks for any white spaces in the end of the string
         while s[i].isspace():
             i -= 1
 
