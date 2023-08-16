@@ -27,6 +27,7 @@ class Solution:
 
 def main():
     solution = Solution()
+    # test cases
     solution.lengthOfLastWord("Hello World")
     solution.lengthOfLastWord(" Catch me if you can  ")
 
