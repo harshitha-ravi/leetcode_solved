@@ -20,16 +20,14 @@ class Solution:
             count += 1
             i -= 1
 
-        print(count)
-
         return count
 
 
 def main():
     solution = Solution()
     # test cases
-    solution.lengthOfLastWord("Hello World")
-    solution.lengthOfLastWord(" Catch me if you can  ")
+    print(solution.lengthOfLastWord("Hello World"))
+    print(solution.lengthOfLastWord(" Catch me if you can  "))
 
 
 if __name__ == "__main__":
