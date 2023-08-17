@@ -36,8 +36,8 @@ class Solution:
                     return False
 
                 # If not present add it to the set
-                row[r].add(nums[r])
-                column[c].add(nums[c])
+                row[r].add(nums[r][c])
+                column[c].add(nums[r][c])
                 square[(r // 3, c // 3)].add(nums[r][c])
 
         return True
@@ -45,6 +45,18 @@ class Solution:
 
 def main():
     solver = Solution()
+
+    board = [["5", "3", ".", ".", "7", ".", ".", ".", "."]
+        , ["6", ".", ".", "1", "9", "5", ".", ".", "."]
+        , [".", "9", "8", ".", ".", ".", ".", "6", "."]
+        , ["8", ".", ".", ".", "6", ".", ".", ".", "3"]
+        , ["4", ".", ".", "8", ".", "3", ".", ".", "1"]
+        , ["7", ".", ".", ".", "2", ".", ".", ".", "6"]
+        , [".", "6", ".", ".", ".", ".", "2", "8", "."]
+        , [".", ".", ".", "4", "1", "9", ".", ".", "5"]
+        , [".", ".", ".", ".", "8", ".", ".", "7", "9"]]
+
+    print(solver.isValid(board))
 
 
 if __name__ == "__main__":
