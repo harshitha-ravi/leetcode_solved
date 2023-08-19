@@ -14,6 +14,7 @@ inner while loop for two sum -> for b and c (left and right pointers) same  conc
 inside this loop -> in the end -> need to increment left pointer (no need to increment right)
 """
 
+
 class Solution:
 
     def findThreeSum(self, nums):
@@ -53,7 +54,7 @@ class Solution:
                     # use the while loop -> not if (THINK)
                     # whenever adding condition w.r.t two pointers -> add necessary checks left < right
                     left += 1
-                    while nums[left] == nums[left] - 1 and left < right:
+                    while nums[left] == nums[left - 1] and left < right:
                         left += 1
 
         return result
