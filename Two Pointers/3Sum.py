@@ -1,7 +1,7 @@
 """
 Extended version of Two Sum II
 
-Given an array, return the triplets that sum up to zero. No diplicate tripllets allowed
+Given an array, return the triplets that sum up to zero. No duplicate triplets allowed
 
 Hint : Break down the problem to Two Sum
 -> to break it down to 2 sum -> sort()
