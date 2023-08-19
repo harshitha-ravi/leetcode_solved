@@ -21,7 +21,7 @@ class Solution:
 
         # First step : sort the array
         nums.sort()
-
+       
         # defining a result array
         result = []
 
