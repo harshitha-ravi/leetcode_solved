@@ -6,13 +6,13 @@ Condition -->buy on one day, sell on other day. Should buy first -> in order to 
 
 Technique --> Sliding Window -> Two Pointers (left and right)
 
-Looping strategy --> wIterate through each item
+Looping strategy --> Iterate through each item
 
 Identify the Window --> minimum buying price : minCP
 
-Based on the condition --> either shrink the window or update the solution
+Based on the condition --> either slide/shrink the window or update the solution
 
-Goal --> Need to max Profit
+Goal --> Need to return  max Profit
          2 variable strategy -> local and global max
 """
 
