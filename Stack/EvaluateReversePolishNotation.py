@@ -13,6 +13,9 @@ Stack operations -->
 
 Goal --> Evaluate the expression
 
+Time Complexity : O(n)
+Space Complexity : O(n)
+
 Companies : Amazon
 
 """
