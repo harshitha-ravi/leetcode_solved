@@ -51,7 +51,6 @@ class Solution:
 
         return minSpeed
 
-
 def main():
     solver = Solution()
     print(solver.minEatingSpeed([3, 6, 7, 11], 8))
