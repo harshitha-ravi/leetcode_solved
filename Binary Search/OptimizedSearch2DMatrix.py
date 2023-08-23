@@ -26,6 +26,8 @@ class Solution:
         ROWS, COLS = len(matrix), len(matrix[0])
 
         top, bot = 0, ROWS - 1
+
+        # finding the row
         while top <= bot:
             row = (top + bot) // 2
             if target > matrix[row][-1]:
@@ -35,8 +37,11 @@ class Solution:
             else:
                 break
 
+        # if none found -> return false
         if not (top <= bot):
             return False
+
+        # if the row is picked -> perform the actual binary search on it
         row = (top + bot) // 2
         l, r = 0, COLS - 1
         while l <= r:
@@ -48,6 +53,7 @@ class Solution:
             else:
                 return True
         return False
+
 
 def main():
     solver = Solution()
