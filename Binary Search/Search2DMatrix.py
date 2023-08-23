@@ -1,5 +1,5 @@
 """
-EASY
+MEDIUM
 
 Problem --> Given a 2D array matrix, and target ---> return True if target  found, else return False
 
