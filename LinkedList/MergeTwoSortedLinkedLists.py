@@ -1,17 +1,16 @@
 """
 EASY
 
-Problem --> Given a head of the LL, reverse the LL (LinkedList)
+Problem --> Given two sorted LLs - merge it
 
-Technique --> For Iterative method, use two pointers : curr and prev
+Technique --> loop through both LLs and add it accordingly to a dummy node (separate LL)
 
-Goal --> is to reverse the list, keep updating the curr.next in each iteration. And forward the curr and next
-pointers by one step each
+Goal --> merge
 
 Time Complexity : O(n)
-Space Complexity : O(1)
 
-Companies : Google, Facebook
+
+Companies : Microsoft
 
 """
 
