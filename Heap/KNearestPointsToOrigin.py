@@ -11,6 +11,8 @@ Technique
         3 - heappop
         4 - return res array
 
+IMPORTANT : Storing list in heap? - put the key element - first - [dist, x, y]
+
 
 Goal --> return K nearest points
 
