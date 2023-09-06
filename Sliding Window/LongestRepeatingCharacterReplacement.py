@@ -7,7 +7,7 @@ Problem --> Given a string and k (where k is the number of replacements that can
 Technique --> Sliding window + HashMap for string the count of char
             - left pointer, right pointer, max variable
 
-Goal --> is to reverse the list, keep updating the curr.next in each iteration. And forward the curr and next piinters by one step each
+Goal --> return the length of the longest substring
 
 Time Complexity : O(n)
 Space Complexity : O(n)
