@@ -1,34 +1,48 @@
-class Solution:
-    def fetchMaxLength(self, string, k):
+"""
+MEDIUM
 
-        # left pointer -> starting from the 0th index
+Problem --> Given a string and k (where k is the number of replacements that can be done)
+        - return the length of the longest substring
+
+Technique --> Sliding window + HashMap for string the count of char
+            - left pointer, right pointer, max variable
+
+Goal --> is to reverse the list, keep updating the curr.next in each iteration. And forward the curr and next piinters by one step each
+
+Time Complexity : O(n)
+Space Complexity : O(n)
+
+Companies : Google
+
+"""
+
+
+class Solution:
+    def fetchMaxLength(self, s, k):
+
+        count = {}
+        res = 0
+
+        # left pointer
         left = 0
 
-        # max variable
-        maxLength = 0
+        # right pointer -> will traverse the entire string
+        for right in range(len(s)):
 
-        # variable to store k
-        k_temp = k
+            # fetch the count for the right pointer value
+            count[s[right]] = count.get(s[right], 0) + 1
 
-        # right pointer traversing through the entire string
-        for right in range(len(string)):
+            # The main idea here is -> in the given window, the replaceable character count should be <= k
+            # Because k is the number of times we can perform the replacements
+            # If this doesn't satisfy then , we need to shrink the left pointer
+            # by decrementing the count of that character by 1
+            # and finally increment the left pointer (advance towards right)
+            while (right - left + 1) - max(count.values()) > k:
+                count[s[left]] -= 1
+                left += 1
 
-            if string[right] != string[left]:
-
-                if k_temp == 0:
-                    # reassign the right index value to left
-                    left = right
-
-                    # reset the k_temp  value
-                    k_temp = k
-
-                else:
-                    # if not keep computing the maxLength and decrement the k_temp
-                    k_temp -= 1
-
-            maxLength = max(maxLength, right - left + 1)
-
-        return maxLength
+            res = max(res, right - left + 1)
+        return res
 
 
 def main():
